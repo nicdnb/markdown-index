@@ -36,7 +36,7 @@ glob(dir + '/**/*.md', function (err, files) {
     })
 
     // Add filename as a heading.
-    return '### [' + filenameSlug + '](' + file + ')\n\n' + table.content
+    return '### [' + file + '](' + file + ')\n\n' + table.content
   })
 
   process.stdout.write(tables.join('\n\n'))
